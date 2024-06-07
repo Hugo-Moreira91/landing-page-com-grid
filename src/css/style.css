@@ -1,0 +1,54 @@
+html{
+    font-size: 62.5%; /* transforma 1rem = 10px (será utilizado a unidade rem para os tamanhos) */
+}
+
+body{
+    display: grid;
+    /* para o número de colunas deve-se olhar a sessão de projetos, a qual possui o maior número (4 colunas); para as linhas, será usada uma para cada sessão do site (6 sessões = 6 linhas) */
+    grid-template-areas: "header header header header"
+                         "hero hero hero hero"
+                         "about about about about"
+                         "services services services services"
+                         "projects projects projects projects"
+                         "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* HEADER */
+
+.header{
+    grid-area: header;
+}
+
+/* HERO */
+
+.hero{
+    grid-area: hero;
+}
+
+/* ABOUT */
+
+.about{
+    grid-area: about;
+}
+
+/* SERVICES */
+
+.services{
+    grid-area: services;
+}
+
+/* PROJECTS */
+
+.projects{
+    grid-area: projects;
+}
+
+/* FOOTER */
+
+.footer{
+    grid-area: footer;
+}
